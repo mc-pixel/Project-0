@@ -1,9 +1,9 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define main_character = Character("main",color="#000000") 
+define main_character = Character("main",color="#000000")
 define dude_rational = Character("RaTiOnAl",color="#296d98")
 define dude_crazy  = Character("Crazy",color="#8B0000")
 
@@ -26,10 +26,11 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    main_character "My head hurts, and where tf is my tp?"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    dude_rational "we should search for it."
 
+    dude_crazy "Fuck that, let's blaze it and down a six pack"
     # This ends the game.
 
     return
