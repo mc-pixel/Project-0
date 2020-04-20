@@ -1,0 +1,21 @@
+label bathroom_option1:
+    r "Come on! Adventures, mirrors and undiscovered faces!"
+    mc "Here we go"
+    #insert character sprite: <change> to standard neutral.pngmc "Not bad, not bad…"
+    r "If you say so... what’s that on your face? What is it, oh my god?"
+    mc "What? What is it?"
+    r "Oh, wait, that’s just you."
+    mc "...."
+    mc "That was such a useful insight, thank you."
+    return
+label bathroom_option2:
+    r "Teeth. Brush. Do it stinky, nameless person!"
+    mc "I maybe should, but what’s the point? Can’t exactly go anywhere or bless someone with my minty fresh kiss…"
+    r "No, your breath stinks and you’ll feel better, go!"
+    "Teeth were brushed, breath was… minty-ed. Nothing really changed though, but good on you for being a decent human."
+    return
+label bathroom_option3:
+    "Penis"
+    return
+label bathroom_option4:
+    "Ye"
