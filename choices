@@ -15,7 +15,37 @@ label bathroom_option2:
     "Teeth were brushed, breath was… minty-ed. Nothing really changed though, but good on you for being a decent human."
     return
 label bathroom_option3:
-    "Penis"
+“Little cupboard under the sink presented all sorts of exploring mysteries and was calling to you to be…. explored.”
+    menu:
+        “Look inside the cupboard, maybe there something cool there, like money or food, or… maybe even toilet paper?”:
+            “Little cupboard opened with a creak to reveal it’s fascinating contents - one 
+            deodorant and some soap bars covered with dust. You debated for a second using
+            that deodorant but ruled against touching that dusty thing. You close it back, 
+            disappointed in the lack of adventures.”
+
+        “Look under, who knows of all sorts of intriguing items that were conveniently dropped there for us to find?”:
+            “Your back, knees and everything involved in the grotesque movement of crouching
+            lets you know that it hates you with passion and you mildly regret doing that in the 
+            first place. However, your efforts are rewarded - under cupboard in a pile of dust and 
+            god knows what else you find a PHONE, which is cool. Although, you can’t seem to   
+            recall the password which dims the excitement of such discovery.”
+        “Look around and stare uncomfortably at your toilet...maybe there’s some sort of mystery there, I don’t know…”:
+            “You peek around the small cupboard to reveal a toilet, which you could see already 
+            anyway, but you couldn’t resist a grotesque energy wasting movement. Toilet was 
+            boringly the same, with no Nessies in sight. Boooooring!”
     return
 label bathroom_option4:
-    "Ye"
+“Okay. We don’t like this room anymore. Let’s go! You look one final time at the room and note suspicious lack of  TOILET PAPER, which is going to be a problem in the near future.”
+    mc    “There should be toilet paper, where did it go?”
+        “This kingdom won’t last long without its most valuable resource! We can’t
+        get more, we’re locked in! Gotta. Find. My. Precious!”
+    r    “Bro...No.”
+    mc    “Bro, yes.”
+    r    “Okay, then we shall do that to restore our peace, I guess?”
+    mc    “Yes. Yes. Yes. We need THAT TOILET PAPER!”
+    return
+#character sprite: <change> to standard sad.png 
+#location change: living room
+#character sprite: <change> to standard neutral.png
+
+
