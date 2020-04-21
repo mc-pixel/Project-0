@@ -47,5 +47,113 @@ label bathroom_option4:
 #character sprite: <change> to standard sad.png 
 #location change: living room
 #character sprite: <change> to standard neutral.png
+label kitchen_option1:
+    “You carefully peek at dishes from a safe distance. You’re not sure if it should be touched at all, although something tells you that it should be washed and organised.”
+    r    “Me, me is something. Please wash it...now?”
+    mc    “No, gotta locate TOILET PAPER first. Dishes can wait, invaluable resource can’t!”
+    r    “Was worth the try.”
+label kitchen_option2:
+    “Fridge opens and you look inside. You just kinda look in there waiting for something to happen. Nothing happens. Better luck next time.”
+label kitchen_option3:
+    “You shuffle through the drawers all around you and they silently judge your futile attempts to locate anything that would prove of any use. Nevertheless, you find a SPOON on the floor. It’s covered in something sticky and smells sweet.”
+    menu:
+        “Lick it. It smells nice.”:
+            “You look at the spoon in your hand. Cautiously sniff it again.”
+            r    “No. No, don’t. Please.”
+            mc    “Why not? It smells nice.”
+            r    “You don’t bother washing dishes. What tells you floors are better?”
+            “Besides, gross, dude.”
+            “You give spoon a lick. Tastes sweet and faintly of vanilla. You don’t die, although a deep sense of shame sets in.”
+         “Have some good conscience and don’t.”:
+            “You give the spoon a thorough stare down. Spoon says nothing in its defence, so with heavy heart you toss it into the sink.”
+            r    “So, I see your good conscience won? For once?”
+            mc    “Yes, just this once, no more.”
+            r    “Dang it.”
+            “You shrug at your own thoughts and decide that drawers keep their secrets too well for you to discover them and get going.”
+# character sprite:<change> standard confused.png
+label kitchen_option4:
+“Kitchen is dull. Imbedded sense of responsibility and lack of TOILET PAPER in sight makes you upset, so you do the most logical thing and leave.”
+label bedroom_option1:
+    “Laptop is new and shiny. You poke a button and it comes back to life.”
+    “Password:?”
+    #character sprite:<change>confused standard.png
+    mc    “Uh, password…”
+    r    “Yes, password. Knowing you, maybe 696969?”
+    “You put in the desired sequence with a childish giggle and press Enter.”
+    “Incorrect password.” 
+    r    “42069, that’s definitely it.”
+    “Incorrect password.”
+    “What were you hoping for, exactly? You turn away and decide to focus on something else.”
+label bedroom_option2:
+    “You look at a bed covered in equal amounts by blankets and some clothes of questionable cleanliness. Still comfy enough to lie down.” 
+    “You lie down and there’s something under you. Empty ICE CREAM pack. Still sticky and you think how long it’s been there and why in the first place…”
+    r    “Not surprised. At all.”
+    mc    “Ouch.”
+    “Shame makes you turn away and pretend there’s something more interesting to do.”
+label bedroom_option3:
+    “Nope. You don’t feel better. The room is the same as it’s been before, all those days in Great Quarantine make you question how long it’s actually been.”
+    “Man cave is depressive. You quickly exit the room and close the door behind you, just to be sure you don’t catch a glimpse of it again.
+label other_bedroom_option1:
+    “Two big nightstands, made from nice dark wood reside on each side of the bed, silently judging your financial situation. You know you didn’t pay for those. But who did?”
+    “More questions without answers.” 
+    “You see photos in frames, smiling people, having fun together. They all look vaguely familiar, but you prefer not to think about it too much…”
+    r    “Uh, not to be a party pooper, but those are your parents.”
+    mc    “What’s that? Who...is that?”
+    r    “Uhm, parents…? No? Nothing?”
+    “It’s okay, buddy, a bit more Netflix and you’ll not remember anything, so, don’t worry too much.”
+    mc    “Okay, sure. If you say so…”
+    r    “God help me.”
+    “Drawers, drawers, a lot of drawers!”
+    menu:
+        “Let’s peek inside, who knows, TOILET PAPER maybe?”:
+            “Three drawers per night stand is a lot of interesting stuff hiding in there.”
+            “You try to pull one out eagerly but, as you might have expected, those strangers that inhabited your house locked them. Evil bastards!”
+            “You push and pull at them for no avail. Life seems hard.”
+            r    “Done?”
+            “You push and pull at them some more in the hopes that something different happens.”
+            r    “Sure. You know what? Do it some more!”
+            “Slightly ashamed, you pull at it some more, except with nearly not as much enthusiasm and childish wonder.”
+            mc    “Debbie Downer…”
+            “You leave the drawers alone and turn your attention elsewhere.”
+        “We don’t know these people, let’s be decent again, please?”:
+            r    “Decent decision after decent decision. You alright?”
+            “Drawers call to you with shined handles, but you must resist.”
+            “Must….resist….”
+label other_bedroom_option2:
+    “You take a step back and launch yourself forward towards the bright future, filled with pillows, blankets and sweet dreams.”
+    “You land in a pile of amazing goodness and feel happy.”
+    “You have underestimated your quarantine munchies. Bed cracks, apparently one of the leg breaks and you roll down onto the floor.”
+    r     “.....”
+    “You silently stand up and pretend nothing happened.”
+    “Your elbow hurts though.”
+    “You ignore it and repress any feelings of guilt and shame.”
+    r    “I refuse to comment.”
+label other_bedroom_option3:
+    “Looking around, there is nothing worth exploring here. Some bedroom of some people you have no memory of, feels wrong to scavenge, so you just leave.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
