@@ -1,0 +1,147 @@
+# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+define mc = Character("main",color="#000000")
+define r = Character("RaTiOnAl",color="#296d98")
+define c  = Character("Crazy",color="#8B0000")
+
+
+# The game starts here.
+
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene living room
+
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+    show  eileen happy
+
+    # These display lines of dialogue.
+
+
+    mc "Oh,unspecified deity in the sky, my head! My eyes, my everything!"
+    mc "What happened? Why does everything hurt and who am I again?"
+    mc "Oh, well. Question for the future me, now me needs bathroom.Bathroom and coffee. Let's go, me!"
+    r "What? Not that easy, huh? Choices, choices, my dear! What did we do yesterday?"
+    mc "Shut up, me! We did... something...somewhere...yesterday. See? Easy."
+    r "Sure sure, now go find out who's we and if we are hot, I'm dying to know!"
+    jump bathroom_intro
+
+    label bathroom_intro:
+        scene bathroom
+        "Small, cozy and somewhat familiar bathroom.You can see a pile of laundry that hasn't been touched in a while, sink with exactly one toothbrush and some sort of flowery smelling soap, small cupboard and a shower. There's also a mirror, that begs to look into it and discover something new about you."
+
+        mc "Okaaaay, here we are! What now?"
+        jump bathroom
+
+    label bathroom:
+
+
+        menu:
+            "Look into the mirror, who knows what you'll find there. Maybe meaning of life or something...":
+                call bathroom_option1
+                jump bathroom
+            "Brush your teeth and wash your face. With your eyes closed,because that mirror is scary. We don't like scary.":
+                call bathroom_option2
+                jump bathroom
+            "Cupboard? Cupboard!":
+                call bathroom_option3
+                jump bathroom
+            "No, just no. Let's get out of here.":
+                call bathroom_option4
+                jump living_room
+
+    label living_room:
+        scene living_room
+        "You make your way back to the living room. Hmmmmm where to go?"
+        menu:
+            "Let’s go look in the kitchen.":
+                jump kitchen_intro
+            "I wonder what is in the bathroom. Wouldn't hurt to check.":
+                jump bathroom_intro
+            "My bedroom, I wonder what’s there?":
+                jump bedroom_intro
+            "Some other bedroom, that was once inhabited by some people. I can’t recall the time before the Great Quarantine…":
+                jump other_bedroom_intro
+
+    label bedroom_intro:
+        scene bedroom
+        "Little messy room with a crowning jewel of a laptop in the middle. Everything looks vaguely familiar, although you struggle to remember anything specific.Maybe, if you look around - you’ll feel better?"
+        jump bedroom
+    label bedroom:
+
+        menu:
+            "Laptop? Laptop. Maybe I wrote down something useful that would point you to TOILET PAPER?":
+                call bedroom_option1
+                jump bedroom
+
+            "That bed and blanket sure looks comfy. Lay down maybe?":
+                call bedroom_option2
+                jump bedroom
+
+            "Nope. Looks like a man cave. I don’t want to face the reality.":
+                call bedroom_option3
+                jump living_room
+    label kitchen_intro:
+        scene kitchen
+        "You find yourself in a kitchen, that undoubtedly looks like one. Which is good, we need stability and reassurance, in those troubling times of lack of TOILET PAPER."
+        "You notice a sink, filled to brim with dishes, you begin to fear that whatever is in there might bite your hand. There’s a fridge, coffee machine and more drawers filled with...kitchen stuff, you think. "
+        jump kitchen
+    label kitchen:
+
+        menu:
+            "Cautiously look at dishes. No touching tho.":
+                call kitchen_option1
+                jump kitchen
+
+            "Peek in fridge, food is cool.":
+                call kitchen_option2
+                jump kitchen
+
+            "Check around for TOILET PAPER. We need it.":
+                call kitchen_option3
+                jump kitchen
+
+            "Let’s go elsewhere. I sense no luck here.":
+                call kitchen_option4
+                jump living_room
+
+    label other_bedroom_intro:
+        scene other_bedroom
+        "A room like any other, except more tidy and organised than yours. A big, and I mean really big, maybe like a queen size or something is occupying majority of the room’s space. Two nightstands and a little dresser table can be seen as well. You have few recollections of who the inhabitants were , actually…"
+        "Parents…? Yes, parents. They lived here. Too long has passed since the beginning of the Great Quarantine, you struggle to remember...What are parents anyway…?"
+        jump other_bedroom
+    label other_bedroom:
+
+        menu:
+            "Examine nightstands, maybe there’s some TOILET PAPER stashed in there? Memory jiggling artifacts also could be useful to, ya know, remember stuff…":
+                call other_bedroom_option1
+                jump other_bedroom
+
+            "The bed looks comfy. Go jump on it!":
+                call other_bedroom_option2
+                jump other_bedroom
+            "This room has memories of the past and it’s tidiness unnerves you too much.You decide to leave as soon as possible.":
+                call other_bedroom_option3
+                jump living_room
+
+
+
+
+
+
+
+
+
+
+    # This ends the game.
+
+    return
