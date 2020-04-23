@@ -134,3 +134,59 @@ label other_bedroom_option2:
 label other_bedroom_option3:
     "Looking around, there is nothing worth exploring here. Some bedroom of some people you have no memory of, feels wrong to scavenge, so you just leave."
     return
+label livingroom_option1:
+    “You pick up the remote and mindlessly click a button, hoping there’s not a password or something. “
+    “TV comes back to life with some dubious quality TV show playing.”
+    “You’re mildly revulsed but you can also see yourself watching that.” 
+    “Mindlessly watching… while…”
+    r    “While what?”
+    mc    “What? I don’t know.”
+    r    “Maybe eating?”
+    mc    “Ye, like ice cream or something…”
+    “I don’t know though…”
+    c    “Of course you don’t.”
+    return
+label livingroom_option2:
+    global caveman=cvm
+    “You shift your loving but confused gaze towards a cupboard that is covered in memorabilia. Little sea shells, figurines and statuettes.” 
+    “Is... is that a caveman figurine?”
+    “it is a little caveman figurine. Sweet.” 
+    r    “So, uh, why is that here?”
+    mc    “You ask me? I don’t know.”
+    cvm    “Ye, me neither.”
+    mc    “What?”
+    cvm    “What?”
+    r    “Put it down slowly and don’t think about it.”
+    cvm    “Ye, don’t think about it.”
+    “No questions asked.”
+    “You put it down and do your best to ignore it.”
+    “No TOILET PAPER in sight either.”
+    “You slowly back off, not letting your gaze escape the little caveman, in case something else happens.”
+    cvm    “Wait a sec, I didn’t get this last thingie. Do you mind repeating that?”
+    “You shudder from unexplainable horror and do your best to ignore.”
+    return
+label livingroom_option3:
+    “Sofa looks surprisingly welcoming.”
+    r    “No, it doesn’t.”
+    mc    “Yes, it does.”
+    r    “This is gonna break if you do it.”
+    “No, it won’t” 
+    r    “Yes, it will”
+    mc    “Eh, let’s do this anyway.”
+    r    “Oh, here we go.”
+    #break the game
+    return exit()
+label livingroom_option4: 
+    “Living room looks not that living and that creepy caveman statue is giving you a death stare from the top of the cupboard. You feel unwelcome.”
+    “You turn around and leave.”
+    return
+
+
+
+
+
+
+
+
+
+
