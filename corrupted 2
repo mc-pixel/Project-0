@@ -1,0 +1,51 @@
+label bathroom_intro3:
+    if corrupted_bathroom==4:
+        jump game_over
+    else:
+        "This is just a test"
+        jump corrupted_bathroom2
+
+label corrupted_bathroom2:
+    "Omg it worked"
+    $corrupted_bathroom=4
+    jump corrupted_bathroom2
+label living_room_intro3:
+    if corrupted_living_room==4:
+        jump game_over
+    else:
+        "Living room intro 3 thingy rererere"
+        jump corrupted_living_room2
+label corrupted_living_room2:
+    "It has worked once again"
+    $corrupted_living_room=4
+    jump corrupted_living_room2
+label bedroom_intro3:
+    if corrupted_bedroom==4:
+        jump game_over
+    else:
+        "Bedrtoom intro3 thing"
+        jump corrupted_bedroom2
+label corrupted_bedroom2:
+    "Omg it worked once again"
+    $corrupted_bedroom=4
+    jump corrupted_bedroom2
+label kitchen_intro3:
+    if corrupted_kitchen==4:
+        jump kitchen_intro3
+    else:
+        "Bitchen intro3 thing"
+        jump corrupted_kitchen2
+label corrupted_kitchen2:
+    "Omg it worked once again"
+    $corrupted_kitchen=4
+    jump corrupted_kitchen2
+label other_bedroom_intro3:
+    if corrupted_other_bedroom==4:
+        jump game_over
+    else:
+        "other bedroom intro3 thing"
+        jump corrupted_other_bedroom2
+label corrupted_other_bedroom2:
+    "Omg it worked once again"
+    $corrupted_other_bedroom=4
+    jump corrupted_other_bedroom2
