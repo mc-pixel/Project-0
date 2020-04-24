@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/corrupted1.rpy", line 137, in script call
+    call bedroom2_option3
+  File "game/corrupted1.rpy", line 137, in script call
+    call bedroom2_option3
+ScriptError: could not find label 'bedroom2_option3'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/corrupted1.rpy", line 137, in script call
+    call bedroom2_option3
+  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1436, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/corrupted1.rpy", line 137, in script call
+    call bedroom2_option3
+  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'bedroom2_option3'.
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Project0 1.0
+Fri Apr 24 07:11:29 2020

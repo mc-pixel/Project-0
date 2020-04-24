@@ -1,0 +1,85 @@
+TO DO: room count
+button for the option
+
+characters : dude, his conscience and his craziness
+
+overview of the game : the story focuses on a man locked in quarantine, looking for his stash of tp, while slowly losing to craziness of loneliness and isolation. main character is conversing constantly with himself, his rationale and his slowly overtaking madness.
+
+core loop: starts in the main/living room, according to house plan, character can move in between rooms only if there are doors. every room has a piece of introductory dialogue and things that could be interacted with. Player could go in and out as many time as he wants except, the new dialogue would appear upon second entrance to the same room, commenting that he already looked here and either found something and took it or he doesn't know why he is looking here and maybe his subconscious is trying to tell him something. The longer player meddles - the more craziness starts to set in, for example, if any room has been entered more that 3 times - mc would comment that he feels that he's doing something oddly repetitive and he doesn't know why and craziness would appear as a third character. After that - the more player meddles - the more craziness appears and chimes in the conversations as well as bg changes.
+
+e.g to solve the main puzzle (acquire the roll of tp) player would need to pick up in any order:
+
+    1 - a little spoon from the kitchen floor, covered in something sticky
+    2 - ice cream bucket from under blanket on his bed in room 2
+    3 - find his phone in the bathroom 1
+    4 - look at the tv in the living room and turn it on to see netflix
+    5 - after 1,2 player would comment "I sure did hit up that stash yesterday"
+    6 - after 1,2 and 4 - there would be an option in the kitchen to peek into the freezer and actually locate the tp roll there
+
+GOOD END: correctly located tp roll
+BAD END: craziness setts in and character becomes so anxious that he hides in the bathroom and refuses to go/look anywhere else and the game breaks
+
+script: main character - [mc]
+          rationale - [r]
+          craziness - [c]
+          narrator - []
+
+HOUSE ROOMS:
+living room -> start here
+bedrooms 1, 2, 3
+bathrooms 1,2
+kitchen
+closet
+garden
+porch
+
+START
+obligatory:
+mc    " There was nothing. Only warm, welcoming nothing, and now out of nowhere there's me. Who's me...? I'm ... me. I'm here. Where is here? When is here?"
+
+location: living room
+character sprite: blurry solid black. png 
+
+mc     "Oh,unspecified deity in the sky, my head! My eyes, my everything!"
+           "What happened? Why does everything hurt and who am I again?"
+           "Oh, well. Question for the future me, now me needs bathroom.Bathroom and coffee.       Let's go, me!"
+r          "What? Not that easy, huh? Choices, choices, my dear! What did we do yesterday?"
+mc      "Shut up, me! We did... something...somewhere...yesterday. See? Easy."
+r          "Sure sure, now go find out who's we and if we are hot, I'm dying to know!"
+
+location change: bathroom
+
+"Small, cozy and somewhat familiar bathroom.You can see a pile of laundry that hasn't been touched in a while, sink with exactly one toothbrush and some sort of flowery smelling soap, small cupboard and a shower. There's also a mirror, that begs to look into it and discover something new about us."
+
+mc       "Okaaaay, here we are! What now?"
+
+OPTIONS:  >1 "Look into the mirror, who knows what you'll find there. Maybe                  meaning of life or something..."
+              >2 "Brush your teeth and wash your face. With your eyes closed,                     because that mirror is scary. We don't like scary."
+                >3 "Cupboard? Cupboard!"
+                   >4 "No, just no. Let's get out of here."
+IF: <1>
+r     "Come on! Adventures, mirrors and undiscovered faces!” 
+mc     “Here we go!”
+
+character sprite: <change> to standard neutral . png 
+mc    “Not bad, not bad…”
+r     “If you say so... what’s that on your face? What is it, oh my god?”
+mc     “What? What is it?” 
+r    “Oh, wait, that’s just you.”
+mc    “....”
+    “....”
+    “That was such a useful insight, thank you.”
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
+

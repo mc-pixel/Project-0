@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 95: else clause expects a non-empty block.
+    else:
+         ^
+
+File "game/script.rpy", line 97: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    $corrupted_living_room=2
+    ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Fri Apr 24 04:16:11 2020

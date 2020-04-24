@@ -1,0 +1,55 @@
+# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+define mc = Character("main",color="#000000")
+define r = Character("RaTiOnAl",color="#296d98")
+define c  = Character("Crazy",color="#8B0000")
+
+
+# The game starts here.
+
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene living room
+
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+    show  eileen happy
+
+    # These display lines of dialogue.
+
+
+    mc "Oh,unspecified deity in the sky, my head! My eyes, my everything!"
+    mc "What happened? Why does everything hurt and who am I again?"
+    mc "Oh, well. Question for the future me, now me needs bathroom.Bathroom and coffee. Let's go, me!"
+    r "What? Not that easy, huh? Choices, choices, my dear! What did we do yesterday?"
+    mc "Shut up, me! We did... something...somewhere...yesterday. See? Easy."
+    r "Sure sure, now go find out who's we and if we are hot, I'm dying to know!"
+    jump bathroom
+    label bathroom:
+        "Small, cozy and somewhat familiar bathroom.You can see a pile of laundry that hasn't been touched in a while, sink with exactly one toothbrush and some sort of flowery smelling soap, small cupboard and a shower. There's also a mirror, that begs to look into it and discover something new about you."
+
+        mc "Okaaaay, here we are! What now?"
+        menu:
+            "Look into the mirror, who knows what you'll find there. Maybe meaning of life or something...":
+                call bathroom_option1
+            "ayeayeyayayeayaye":
+                "adfas"
+
+
+
+
+        "Helloooo"
+
+
+    # This ends the game.
+
+    return
