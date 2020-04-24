@@ -1,0 +1,351 @@
+TO DO: room count
+button for the option
+
+
+characters : dude, his conscience and his craziness
+
+
+overview of the game : the story focuses on a man locked in quarantine, looking for his stash of tp, while slowly losing to craziness of loneliness and isolation. main character is conversing constantly with himself, his rationale and his slowly overtaking madness.
+
+
+core loop: starts in the main/living room, according to house plan, character can move in between rooms only if there are doors. every room has a piece of introductory dialogue and things that could be interacted with. Player could go in and out as many time as he wants except, the new dialogue would appear upon second entrance to the same room, commenting that he already looked here and either found something and took it or he doesn't know why he is looking here and maybe his subconscious is trying to tell him something. The longer player meddles - the more craziness starts to set in, for example, if any room has been entered more that 3 times - mc would comment that he feels that he's doing something oddly repetitive and he doesn't know why and craziness would appear as a third character. After that - the more player meddles - the more craziness appears and chimes in the conversations as well as bg changes.
+
+
+e.g to solve the main puzzle (acquire the roll of tp) player would need to pick up in any order:
+
+
+    1 - a little spoon from the kitchen floor, covered in something sticky
+    2 - ice cream bucket from under blanket on his bed in room 2
+    3 - find his phone in the bathroom 1
+    4 - look at the tv in the living room and turn it on to see netflix
+    5 - after 1,2 player would comment "I sure did hit up that stash yesterday"
+    6 - after 1,2 and 4 - there would be an option in the kitchen to peek into the freezer and actually locate the tp roll there along with the note “from past you”
+
+
+GOOD END: correctly located tp roll
+BAD END: craziness setts in and character becomes so anxious that he hides in the bathroom and refuses to go/look anywhere else and the game breaks
+
+
+script: main character - [mc]
+          rationale - [r]
+          craziness - [c]
+          narrator - []
+
+
+HOUSE ROOMS:
+living room -> start here
+bedrooms 1, 2
+bathrooms 1
+kitchen
+
+
+START OF THE IMPORTANT SH...UFF:
+obligatory:
+mc    " There was nothing. Only warm, welcoming nothing, and now out of nowhere there's me. Who's me...? I'm ... me. I'm here. Where is here? When is here?"
+
+
+location: living room
+character sprite: blurry solid black. png 
+
+
+mc         "Oh,unspecified deity in the sky, my head! My eyes, my everything!"
+           "What happened? Why does everything hurt and who am I again?"
+           "Oh, well. Question for the future me, now me needs bathroom.Bathroom and coffee.       Let's go, me!"
+r          "What? Not that easy, huh? Choices, choices, my dear! What did we do yesterday?"
+mc      "Shut up, me! We did... something...somewhere...yesterday. See? Easy."
+r          "Sure sure, now go find out who's we and if we are hot, I'm dying to know!"
+
+
+location change: bathroom
+
+
+"Small, cozy and somewhat familiar bathroom.You can see a pile of laundry that hasn't been touched in a while, sink with exactly one toothbrush and some sort of flowery smelling soap, small cupboard and a shower. There's also a mirror, that begs to look into it and discover something new about you."
+
+
+mc       "Okaaaay, here we are! What now?"
+
+
+OPTIONS:  >1 "Look into the mirror, who knows what you'll find there. Maybe                          meaning of life or something..."
+                  >2 "Brush your teeth and wash your face. With your eyes closed,                                 because that mirror is scary. We don't like scary."
+                    >3 "Cupboard? Cupboard!"
+                   >4 "No, just no. Let's get out of here."
+
+
+IF: <1>
+r         "Come on! Adventures, mirrors and undiscovered faces!” 
+mc         “Here we go!”
+
+
+character sprite: <change> to standard neutral.png 
+
+
+mc        “Not bad, not bad…”
+r         “If you say so... what’s that on your face? What is it, oh my god?”
+mc         “What? What is it?” 
+r        “Oh, wait, that’s just you.”
+mc        “....”
+        “....”
+        “That was such a useful insight, thank you.”
+
+
+IF: <2>
+r        “Teeth. Brush. Do it stinky, nameless person!”
+mc        “I maybe should, but what’s the point? Can’t exactly go anywhere or bless someone      
+             with my minty fresh kiss…”
+r        “No, your breath stinks and you’ll feel better, go!”
+
+
+“Teeth were brushed, breath was… minty-ed. Nothing really changed though, but good on you for being a decent human.”
+
+
+IF: <3>
+“Little cupboard under the sink presented all sorts of exploring mysteries and was calling to you to be…. explored.”
+
+
+        OPTIONS: >1 “Look inside the cupboard, maybe there something cool there, like 
+                                     money or food, or… maybe even toilet paper?”
+                      >2 “Look under, who knows of all sorts of intriguing items that were 
+                                    conveniently dropped there for us to find?”
+                             >3 “Look around and stare uncomfortably at your toilet...maybe there’s 
+                                   some sort of mystery there, I don’t know…”
+        IF <3.1>: 
+        “Little cupboard opened with a creak to reveal it’s fascinating contents - one 
+        deodorant and some soap bars covered with dust. You debated for a second using
+        that deodorant but ruled against touching that dusty thing. You close it back, 
+        disappointed in the lack of adventures.”
+        IF <3.2>:
+        “Your back, knees and everything involved in the grotesque movement of crouching
+        lets you know that it hates you with passion and you mildly regret doing that in the 
+        first place. However, your efforts are rewarded - under cupboard in a pile of dust and 
+        god knows what else you find a PHONE, which is cool. Although, you can’t seem to   
+            recall the password which dims the excitement of such discovery.”
+        IF <3.3>:
+        “You peek around the small cupboard to reveal a toilet, which you could see already 
+        anyway, but you couldn’t resist a grotesque energy wasting movement. Toilet was 
+        boringly the same, with no Nessies in sight. Boooooring!”
+
+
+IF <4>:
+“Okay. We don’t like this room anymore. Let’s go! You look one final time at the room and note suspicious lack of  TOILET PAPER, which is going to be a problem in the near future.”
+        mc        “There should be toilet paper, where did it go?”
+                “This kingdom won’t last long without its most valuable resource! We can’t
+                get more, we’re locked in! Gotta. Find. My. Precious!”
+        r        “Bro...No.”
+        mc        “Bro, yes.”
+        r        “Okay, then we shall do that to restore our peace, I guess?”
+        mc        “Yes. Yes. Yes. We need THAT TOILET PAPER!”
+character sprite: <change> to standard sad.png 
+
+
+location change: living room
+character sprite: <change> to standard neutral.png
+
+
+OPTIONS: >1 “Let’s go look in the kitchen.”
+              >2 “My bedroom, I wonder what’s there?”
+              >3 “Some other bedroom, that was once inhabited by some people. I can’t recall
+                        the time before the Great Quarantine…”
+
+
+KITCHEN ->>> 1st time entering 
+
+
+“You find yourself in a kitchen, that undoubtedly looks like one. Which is good, we need stability and reassurance, in those troubling times of lack of TOILET PAPER.”
+“You notice a sink, filled to brim with dishes, you begin to fear that whatever is in there might bite your hand. There’s a fridge, coffee machine and more drawers filled with...kitchen stuff, you think. “
+
+
+        OPTIONS: >1 “Cautiously look at dishes. No touching tho.” 
+                              >2 “Peek in fridge, food is cool.”
+                              >3 “Check around for TOILET PAPER. We need it.”
+                              >4 “Let’s go elsewhere. I sense no luck here.”
+
+
+IF KITCHEN<1>: 
+“You carefully peek at dishes from a safe distance. You’re not sure if it should be touched at all, although something tells you that it should be washed and organised.”
+r        “Me, me is something. Please wash it...now?”
+mc        “No, gotta locate TOILET PAPER first. Dishes can wait, invaluable resource can’t!”
+r        “Was worth the try.”
+
+
+IF KITCHEN<2>:
+“Fridge opens and you look inside. You just kinda look in there waiting for something to happen. Nothing happens. Better luck next time.”
+
+
+IF KITCHEN<3>:
+“You shuffle through the drawers all around you and they silently judge your futile attempts to locate anything that would prove of any use. Nevertheless, you find a SPOON on the floor. It’s covered in something sticky and smells sweet.”
+                OPTIONS: >1 “Lick it. It smells nice.”
+                                          >2 “Have some good conscience and don’t.”
+                        IF <1>: 
+                        “You look at the spoon in your hand. Cautiously sniff it again.”
+                        r        “No. No, don’t. Please.”
+                       mc        “Why not? It smells nice.”
+                       r        “You don’t bother washing dishes. What tells you floors are better?”
+                                “Besides, gross, dude.”
+                     “You give spoon a lick. Tastes sweet and faintly of vanilla. You don’t die,                    although a deep sense of shame sets in.”
+
+
+character sprite:<change> standard confused.png
+
+
+IF KITCHEN<4>:
+“Kitchen is dull. Imbedded sense of responsibility and lack of TOILET PAPER in sight makes you upset, so you do the most logical thing and leave.”
+
+
+
+
+              
+KITCHEN ->>> 2nd time
+“Once more, you find yourself in a kitchen. It seems redundant coming here, although you’re hopeful, that maybe TOILET PAPER manifested in the existence. So, you check around again.” 
+
+
+character sprite:<change> standard confused.png
+
+
+OPTIONS: >>> the as first, exclude the pass about SPOON(if found)
+                  IF objectives for GOOD END = True, >>> Add to fridge:
+
+
+          >GOOD END
+
+
+          “You look at the fridge. Your memory jiggles a bit and you suddenly realise - SPOON, ICE CREAM and NETFLIX, followed by the phone equals to another night in your house during Great Quarantine, where you sit and do nothing. ICE CREAM is from freezer. Freezer…Freezer!”
+         OPTION: >”LOOK IN THE FREEZER. NOW!”
+        “You open the freezer, almost breaking the door. There it is, your precious roll of TOILET PAPER. Life is good. Everything is fine. You feel at peace.”
+
+
+           r        “Finally. Thank God, finally. Can we go back to Netflix now? This has 
+                                been too much.”
+
+
+         >>>>GOOD END. Game break.
+
+
+KITCHEN ->>>>>3rd+ time
+“Kitchen? Why kitchen? Oh, God, why kitchen? You’ve been here! Why again?”
+“Deep sense of unease sets in, you feel paranoid and worried, as if there’s someone else watching over you, seeing every move and as if influencing you…”
+“You slowly breathe in and out...Surely, there can’t be anyone there. Nobody is allowed out, so maybe it’s just you…?”
+
+
+OPTIONS: >>> exclude the pass about SPOON(if found)
+                  IF objectives for GOOD END = True, >>> good end
+            ELSE: 
+“There’s nothing new. There is never anything new, it’s all the same yet YOU are expecting something else.”
+r        “It’s okay, it’s okay, just don’t worry.”
+c        “Huh, nothing is OKAY! Never was, never will be!”
+mc        “I should go, I should go somewhere else. I can’t be here.” 
+
+
+>>> OPTION: go elsewhere
+          
+YOUR BEDROOM >>>1st time
+“Little messy room with a crowning jewel of a laptop in the middle. Everything looks vaguely familiar, although you struggle to remember anything specific.Maybe, if you look around - you’ll feel better?” 
+
+
+ OPTIONS: >1 “Laptop? Laptop. Maybe I wrote down something useful that would point you
+                         to TOILET PAPER?”
+                   >2 “That bed and blanket sure looks comfy. Lay down maybe?”
+                   >3 “Nope. Looks like a man cave. I don’t want to face the reality.”
+
+
+IF <1>: 
+“Laptop is new and shiny. You poke a button and it comes back to life.”
+“Password:?”
+
+
+character sprite:<change>confused standard.png
+
+
+mc        “Uh, password…”
+r        “Yes, password. Knowing you, maybe 696969?”
+
+
+“You put in the desired sequence with a childish giggle and press Enter.”
+“Incorrect password.” 
+
+
+r        “42069, that’s definitely it.”
+
+
+“Incorrect password.”
+“What were you hoping for, exactly? You turn away and decide to focus on something else.”
+
+
+IF<2>:
+“You look at a bed covered in equal amounts by blankets and some clothes of questionable cleanliness. Still comfy enough to lie down.” 
+“You lie down and there’s something under you. Empty ICE CREAM pack. Still sticky and you think how long it’s been there and why in the first place…”
+
+
+r        “Not surprised. At all.”
+mc        “Ouch.”
+
+
+“Shame makes you turn away and pretend there’s something more interesting to do.”
+
+
+IF<3>: 
+“Nope. You don’t feel better. The room is the same as it’s been before, all those days in Great Quarantine make you question how long it’s actually been.”
+“Man cave is depressive. You quickly exit the room and close the door behind you, just to be sure you don’t catch a glimpse of it again.” 
+
+
+YOUR BEDROOM >>>2st time
+“You open door and step in. Bed still looks comfy. Slight jab of shame at your man cave is still there.” 
+OPTIONS: >>>>same as before, exclude ICE CREAM(if found)
+
+
+IF<1>:
+“Laptop is the same. You poke it again.”
+ 
+r        “Not 69Ass69. I know it for sure.”
+
+
+“You try the said combination. Nothing happens.”
+
+
+r        “Called it.”
+
+
+IF<2>:
+“Bed is so welcoming and comfy. You lie down but never ending urge to find TOILET PAPER makes you jump out and keep moving.”
+
+
+
+
+YOUR BEDROOM >>>3rd+ time:
+“Unsettling feeling. You have been here before. Not once. Bed no longer looks welcoming, more like a Black Hole that won’t ever let you go. Laptop is the next Terminator.Run, John Konnor, RUN!”
+
+
+r        “Breathe. Please breathe.”
+        “Everything is going to be ok, just calm down.”
+mc        “Is it, is it okay?”
+        “Nothing is okay, I’m here again!”
+r        “Quarantine isn’t helping I know, but please calm down. We live here, everything is
+        okay, we only so many rooms we can go in.” 
+c        “Keep telling yourself that, of course.”
+        “Only so many rooms…”
+        “Only so many days inside…”
+        “So many reasons to keep doing the same thing over and over again…”
+mc        “I need to get out here, get out, get out, get out!”
+
+
+“Panic starts digging its way up from the depths of your mind, you can feel it coming in waves, each next worse than the previous. You have to get out of this room, maybe THEY want to get you out of the room? You don’t know anymore.” 
+
+
+OTHER BEDROOM>>>>>1st time:
+
+
+“A room like any other, except more tidy and organised than yours. A big, and I mean really big, maybe like a queen size or something is occupying majority of the room’s space. Two nightstands and a little dresser table can be seen as well. You have few recollections of who the inhabitants were , actually…”
+“Parents…? Yes, parents. They lived here. Too long has passed since the beginning of the Great Quarantine, you struggle to remember...What are parents anyway…?”
+
+
+OPTIONS: >1 “Examine nightstands, maybe there’s some TOILET PAPER stashed in         
+                        there? Memory jiggling artifacts also could be useful to, ya know, remember 
+                        stuff…”
+                 >2 “The bed looks comfy. Go jump on it!”
+                 >3 “This room has memories of the past and it’s tidiness unnerves you too much.
+                       You decide to leave as soon as possible.”
+
+
+IF<1>:
+“Two big nightstands, made from nice dark wood reside on each side of the bed, silently judging your financial situation. You know you didn’t pay for those. But who did?”
+“More questions without answers.” 
+“You see photos in frames, smiling people, having fun together. They all look vaguely familiar, but you prefer not to think about it too much…”
